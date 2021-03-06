@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif, Verdana, Geneva, Tahoma;
+}
+
+/*ESTILOS GENERALES*/
+.contenedor{
+    width: 85%;
+    margin: 0 auto;
+}
+
+/*VARIABLES*/
+:root{
+    --color     : #7cdbe6;
+    --color2    : #fff;
+    --color3    : #ccc;
+    --color4    : #414a52;
+    --grosor1   : 300; 
+    --grosor2   : 400;  
+    --grosor3   : 500;
+    --grosor4   : 900;
+}
+
+/*BLOQUE MAIN*/
+.main{
+    width: 100%;
+    height: 657px;
+    background-size: cover;
+    position: center center;
+    background-image: url("../Maqueta-Spectrum/images/fondo.jpg");
+}
+
+/*HEADER*/
+.header{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__two{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__two-nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__two-nav li{
+    list-style: none;
+}
+
+.header__two-nav li .active{
+    color: var(--color);
+}
+
+.header__two-nav .nav__item{
+    font-size: 14px;
+    padding: 0px 10px;
+    color: var(--color2);
+    text-decoration: none;
+    font-weight: var(--grosor1);
+}
+
+.header__two-nav li .nav__item:hover{
+    color: var(--color);
+    transition: ease all .7s;
+}
+
+.info__main{
+    width: 100%;
+    margin-top: 150px;
+}
+
+.info__main-box{
+    text-align: center;
+}
+
+.info__main-title{
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: var(--color2);
+    font-weight: var(--grosor4);
+}
+
+.info__main-nav{
+    margin: 30px 0px;    
+}
+
+.nav__item{
+    padding: 0 10px;
+    font-size: 20px;
+    list-style: none;
+    color: var(--color2);
+    display: inline-block;
+    font-weight: var(--grosor2);
+}
+
+.info__main-link,
+.form-link{ 
+    padding: 7px 20px;
+    color: var(--color2);
+    text-decoration: none;
+    background-color: var(--color);
+}
+
+.info__main-link:hover{
+    color: var(--color);
+    transition: ease all .5s;
+    background-color: var(--color2);
+}
+
+/*BLOQUE INFO*/
+.info{
+    padding: 50px 0px;
+    background-color: var(--color);
+}
+
+.info__title{
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.info__title-about{
+    font-size: 35px;
+    color: var(--color4);
+}
+
+.div{
+    width: 50px;
+    height: 2px;
+    margin: 15px auto;
+    background-color: #5caeb6;
+}
+
+.info__description{
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.info__description-parrafo{
+    font-size: 15px;
+    line-height: 23px;
+    color: var(--color4);
+    font-weight: var(--grosor2);
+    padding: 20px 15px 20px 15px;
+}
+
+.gray{
+    letter-spacing: 1px;
+    line-height: 290px;
+    background-color: var(--color4);
+}
+
+.gray:hover{
+    color: var(--color4);
+    background-color: var(--color2);
+}
+
+/*BLOQUE PROYECTS*/
+.proyects{
+    padding: 50px 0px;
+}
+
+/*BLOQUE FORM*/
+.from__container{
+    width: 100%;
+    height: 430px;
+    padding-top: 100px;
+}
+
+.from__container-info{
+    width: 65%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input__name,
+.input__email{
+    width: 48%;
+    border: none;
+    padding: 10px;
+    font-weight: var(--grosor1);
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.input__text{
+    width: 100%;
+    height: 90px;
+    border: none;
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: var(--grosor1);
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.form-link{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color2);
+    background-color: var(--color4);
+}
+
+/*FOOTER*/
+.footer{
+    height: 80px;
+    background-color: var(--color4);
+}
+
+.footer__container{
+    line-height: 80px;
+    text-align: center;
+    color: var(--color3);
+    font-weight: var(--grosor1);
+}
+
+.footer__container a{
+    padding-left: 5px;
+    color: var(--color2);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*RESPONSIVE DESING*/
+@media screen and (max-width: 765px){
+    .info__description-parrafo p{
+        font-size: 12px;
+        text-align: center;
+    }
+}
